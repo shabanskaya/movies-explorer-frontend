@@ -1,0 +1,112 @@
+.profile {
+	width: 410px;
+	margin: 74px auto 70px;
+	display: flex;
+	flex-direction: column;
+	max-width: calc((260 / 320) * 100%);
+}
+.profile__form {
+	width: 410px;
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+}
+.profile__hello {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	margin: 0 0 107px;
+}
+.profile__input-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #E8E8E8;
+
+}
+.profile__input-container:hover {
+	cursor: pointer;
+}
+
+
+.profile__input {
+	text-align: right;
+	background-color: #fff;
+	border: none;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 13px;
+	padding: 16px 0;
+	width: 75%;
+	box-sizing: border-box;
+	border-bottom: 0.2px solid transparent;
+}
+.profile__input:focus-visible {
+	outline: none;
+	border-bottom: 0.2px solid #000;
+}
+.profile__input-title {
+	margin: 0;
+	display: inline-block;
+	padding: 16px 0;
+	font-weight: 500;
+	font-size: 11px;
+	line-height: 13px;
+}
+.profile__submit-button {
+	margin: 204px 0 0;
+	width: 100%;
+	text-align: center;
+	background-color: #fff;
+	border: none;
+	font-size: 13px;
+	line-height: 16px;
+	color: #000000;
+	padding: 0;
+	transition: 0.7s ease opacity;
+	opacity: 1;
+}
+.profile__exit-button {
+	margin: 16px 0 0;
+	width: 100%;
+	text-align: center;
+	background-color: #fff;
+	border: none;
+	font-size: 13px;
+	line-height: 16px;
+	color: #FF4062;;
+	padding: 0;
+	transition: 0.7s ease opacity;
+	opacity: 1;
+	text-decoration: none;
+}
+.profile__exit-button:hover, .profile__submit-button:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+	.profile {
+		margin: 236px auto 200px;
+	}
+	.profile__hello {
+		margin: 0 0 80px;
+	}
+	.profile__submit-button {
+		margin-top: 194px;
+	}
+
+}
+@media screen and (max-width: 500px) {
+	.profile {
+		margin: 70px auto 40px;
+	}
+	.profile__hello {
+		margin: 0 0 64px;
+	}
+	.profile__submit-button {
+		margin-top: calc(100vh - 420px);
+	}
+
+}

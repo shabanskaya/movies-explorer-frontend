@@ -1,0 +1,78 @@
+.navtab {
+	width: 100%;
+	background-color: rgba(243, 193, 248, 1);
+	min-height: 74px;
+}
+.navtab__container {
+	display: flex;
+	justify-content: space-between;
+	width: calc(1140 / 1280 * 100%);
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.navtab__logo {
+	display: block;
+	background-image: url("../../images/logo.svg");
+	height: 38px;
+	width: 38px;
+	margin: 18px auto 18px 0;
+	opacity: 1;
+	transition: 1s opacity ease;
+}
+.navtab__register {
+	text-decoration: none;
+	color: #000;
+	margin: 21px 10px;
+	padding: 8px 20px;
+	font-size: 12px;
+	line-height: 16px;
+	opacity: 1;
+	transition: 1s opacity ease;
+	font-weight: 500;
+}
+.navtab__entry {
+	text-decoration: none;
+	color: #fff;
+	background: #000000;
+	border-radius: 3px;
+	margin: 21px 0 21px 10px;
+	padding: 8px 20px;
+	font-size: 12px;
+	line-height: 16px;
+	opacity: 1;
+	transition: 1s opacity ease;
+	font-weight: 500;
+}
+.navtab__logo:hover {
+	opacity: .7;
+}
+.navtab__register:hover {
+	opacity: .7;
+}
+.navtab__entry:hover {
+	opacity: .7;
+}
+
+@media screen and (max-width: 800px) {
+	.navtab__container {
+		width: calc(688 / 768 * 100%);
+		max-width: 688px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.navtab__container {
+		width: calc(284 / 320 * 100%);
+		max-width: 400px;
+	}
+	.navtab__register {
+		margin: 24px 2px;
+		padding: 5px 12px;
+		font-size: 10px;
+	}
+	.navtab__entry {
+		margin: 24px 0 24px 2px;
+		padding: 5px 12px;
+		font-size: 10px;
+	}
+}
